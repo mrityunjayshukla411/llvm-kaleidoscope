@@ -22,10 +22,17 @@ obj/       intermediate object files
 ## Build
 
 Requires LLVM 18 and clang++.
-
+* Make
 ```bash
 make        # produces bin/kal
 make clean  # remove build artifacts
+```
+
+* CMake
+```bash
+cmake -S . -B build
+cmake --build build # produces bin/kal
+cmake --build build --target clean  # remove build artifacts
 ```
 
 ## Usage
